@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    
+<title>Formulário</title>
+
+
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    
+        <form action="http://127.0.0.1:3000/" method="GET">
+            
+            <div class= "dados">
+       
+                <h2>Dados Pessoais</h2><br>
+
+                <label>Nome:</label>
+                <input type="text"   name = "nome" id="nome" size="40" placeholder="Nome Completo" required maxlength="25" minlength="2"> 
+
+                <label>Cargo Pretendido:</label>
+                <input type="text"  name = "cargo" id = "cargo" size="40" placeholder="Cargo" required maxlength="20" minlength="2"><br><br>
+
+                <label>CPF:</label>
+                <input type="text"   name = "cpf" id="cpf" size="40" placeholder="digite apenas números" required  maxlength="11">
+                <div class="container page-header">
+                    <div id="success" class="alert alert-success" style="display: none;" role="alert">
+                        <strong>Oba!</strong> Seu CPF é válido
+                    </div>
+                    <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+                        <strong>Ops!</strong> Seu CPF não é válido
+                    </div>
+                </div><br><br>
+
+                <label>E-mail:</label>
+                <input type="email"  name="email" id="email" size="40" placeholder="exemplo@gmail.com" data-min-length="3" required maxlength="50" minlength="2"><br><br>
+                
+                <label>RG:</label>
+                <input type="text"  name = "rg" id = "txtRg" size="40" placeholder="apenas números" required maxlength="9" ><br><br>
+
+                <label>Data de Nascimento:</label>
+                <input type="date"  name="data" id="data" required><br><br>
+
+                <label>Sexo:</label> &nbsp;
+                <label>Masculino:</label>
+                <input type="radio" name="masculino" id="op1"> 
+
+                <label for="feminino">Feminino:</label>
+                <input type="radio" name="feminino" id="op2"> 
+
+                <label >Outros:</label>
+                <input type="radio" name="outros" id="op3"><br><br>
+
+                <label >Estado Civil:</label>
+                <select name = "estCivil" id="estCivil">
+                    <option  selected disabled value = "">Escolha seu estado Civil</option>
+                    <option value = "casado">Casado</option>
+                    <option value = "solteiro">Solteiro</option>
+                    <option value = "divorciado">Divorciado</option>
+                </select><br><br>
+
+                 <label >Possui Veículo:</label>
+                <select name = "veiculo" id="veiculo">
+                    <option  selected disabled value = "">Possui Veículo</option>
+                    <option value = "sim">Sim</option>
+                    <option value = "nao">Não</option>
+                 </select>
+           
+                <label >Hablitação:</label>
+                <select name = "cnh" id="cnh">
+                 <option selected disabled value = "">Habilitação</option>
+                 <option value = "sim">Sim</option>
+                 <option value = "nao">Não</option>
+                </select><br><br>
+            </div>        
+    
+            <div class = "dados2">   
+                 <h2>Endereço</h2><br>
+
+                 <label >Endereço:</label>
+                <input type="text" name=" endereco" id="txtEndereco" size="40"
+                 placeholder="ex. Nome da rua, 56. Bloco 2, AP 301" required maxlength="50" minlength="2"> <br><br>
+
+                <label >Bairro:</label>
+                <input type="text"  name="bairro" id="txtBairro" size="20" required maxlength="30" minlength="2">
+
+                <label >Cidade:</label>
+                <input type="text" name = "cidade" id="txtCidade" size="20" required maxlength="30" minlength="2"><br><br>
+
+                <label>Cep:</label>
+                <input type="text"  name = "cep" id="txtCep"  placeholder="00000-000" size="9"><br><br>
+
+            </div>
+            <div class ="dados3">
+                <h2>Contatos</h2><br><br>
+                
+                    <label>Telefone Fixo 1:</label>
+                    <input type="text" name = "telefone1" id="txtTel1" size="20" >
+                    
+
+                     <label >Telefone Fixo 2:</label>
+                    <input type="text"  name = "telefone2" id="txtTel2" size="20" ><br><br>
+                    
+
+                 <label>Celular:</label>
+                <input type="text" name="celular" id="txtCell" size="20" required placeholder="(24)00000-0000" maxlength="14">
+
+                <label>Contato:</label>
+                <input type="text" name = "contato" id="txtContato" size="20"><br><br> 
+            </div>  
+
+            <div class = "dados4">
+                <button type="submit" id="submit" onclick="validacao()">Enviar</button>                
+
+            </div>
+        </form>
+      
+</body>
+<script src ="./validacao.js"></script>
+
+</html>

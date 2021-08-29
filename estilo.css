@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins' , 'sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #bdc3c7 , #2c3e50);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+
+}
+h1{
+    color: aliceblue;
+    font-style: oblique;
+    text-align: center;
+    padding: 15px;
+}
+
+.dados{
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 5px;
+    box-shadow: 1px 1px 10px 1px  white;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    border-radius: 10px;
+   
+
+}
+.dados h2{
+    text-align: margin-left;
+}
+
+.dados input, select{
+    border-radius: 10px;
+    height: 30px;
+
+}
+.dados input:focus{
+    border-color: #4286f4 !important;
+}
+.dados input:invalid{
+    border-color: red;
+}
+
+.dados input:valid{
+    border-color:#4286f4;
+}
+
+.dados2 {
+    
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px  white;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.dados2 h2{
+    text-align: margin-left;
+}
+.dados2 input, select{
+    border-radius: 10px;
+    height: 30px;
+    border-color:#4286f4;
+   
+}
+.dados2 input:focus{
+    border-color: #4286f4 !important;
+}
+.dados2 input:invalid{
+    border-color: red;
+}
+.dados2 input:valid{
+    border-color:#4286f4;
+}
+
+
+.dados3 {
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px  white;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.dados3 h2{
+    text-align: margin-left;
+    
+}
+.dados3 input{
+    border-radius: 10px;
+    height: 30px;
+  
+}
+.dados3 input:focus{
+    border-color: #4286f4 !important;
+}
+.dados3 input:invalid{
+    border-color: red;
+}
+.dados3 input:valid{
+    border-color:#4286f4;
+}
+
+.dados4{
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.dados4 button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 35px;
+    background: linear-gradient(to right, #373B44 50%, #4286f4 50% );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:white;
+    font-weight: 600;
+    border: none;
+    transition: all 300ms ease-out;
+    margin-top: 20px;
+    margin-left: -5px;
+
+    
+}
+.dados4 button:hover{
+
+    background-position: left bottom;
+ }
+
+ .error-validation {
+     color:crimson;
+     position: absolute;
+     top: 57px;
+     font-size: .8rem;
+ }
+ .template{
+    display: none;
+ }
+
+
+
+
